@@ -190,6 +190,12 @@
     }
 }
 
+(void)setBounds:(CGRect)bounds 
+{
+    [super setBounds:bounds];
+    self.contentView.frame = bounds;
+}
+
 - (void)setHighlighted:(BOOL)highlighted
 {
     [super setHighlighted:highlighted];
